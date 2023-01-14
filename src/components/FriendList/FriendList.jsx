@@ -6,13 +6,9 @@ const FriendList = ({ friends }) => {
     <li key={id} className={styles.item}>
       <span
         className={
-          isOnline
-            ? `${styles.check} ${styles.online}`
-            : `${styles.check} ${styles.offline}`
+          isOnline ? `${styles.check} ${styles.online}` : `${styles.check}`
         }
-      >
-        {isOnline}
-      </span>
+      ></span>
       <img
         className={styles.avatar}
         src={avatar}
